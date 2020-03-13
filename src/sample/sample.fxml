@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="269.0" layoutY="154.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="269.0" layoutY="118.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="269.0" layoutY="193.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="269.0" layoutY="230.0" mnemonicParsing="false" prefWidth="165.0" text="Button" />
+      <Label alignment="CENTER" layoutX="171.0" layoutY="39.0" prefHeight="26.0" prefWidth="286.0" text="Дневник вожатого" />
+      <ImageView fitHeight="585.0" fitWidth="599.0" layoutX="2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
