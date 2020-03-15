@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="@RGR" uuid="62964850-2176-40f1-a67e-5fb812ee0a2b">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/RGR</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - RGR@localhost" uuid="80edf3cf-dfff-4f70-b911-496170cc0a25">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/RGR</jdbc-url>
+    </data-source>
+  </component>
+</project>

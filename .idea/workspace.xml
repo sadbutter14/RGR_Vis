@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql-connector-java-8.0.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DB_Classes/Configs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DB_Classes/Consts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DB_Classes/DB_Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fxmls/choose.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fxmls/input.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fxmls/main_menu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fxmls/output.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Cat_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Input_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Menu_Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/Out_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RGR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RGR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +32,25 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="62964850-2176-40f1-a67e-5fb812ee0a2b" value="Green" />
+    </colors>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DebuggerManager">
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
@@ -51,13 +93,28 @@
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1Z44XXnTTPt7JgXMsV5asp01Tpn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -67,6 +124,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -74,11 +135,25 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-8.0.19.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/fxmls" />
+      <recent name="$PROJECT_DIR$/src/sample" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -106,10 +181,20 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="RGR" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="RGR" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sample.*" />
@@ -160,6 +245,32 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@RGR" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - RGR@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - RGR@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@719abb41" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -172,6 +283,12 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1584085077873" duration="759000" />
+      <workItem from="1584207379188" duration="7996000" />
+      <workItem from="1584224181823" duration="1390000" />
+      <workItem from="1584226319462" duration="234000" />
+      <workItem from="1584226569645" duration="943000" />
+      <workItem from="1584231409574" duration="3107000" />
+      <workItem from="1584271823319" duration="14552000" />
     </task>
     <servers />
   </component>
@@ -180,12 +297,83 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="743" y="314" width="424" height="480" key="FileChooserDialogImpl" timestamp="1584085835098">
-      <screen x="0" y="32" width="1920" height="1048" />
+    <state x="555" y="1297" width="800" height="673" key="#SQL_Dialects" timestamp="1584283695104">
+      <screen x="0" y="1080" width="1920" height="1080" />
     </state>
+    <state x="555" y="1297" width="800" height="673" key="#SQL_Dialects/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584283695104" />
+    <state x="555" y="1297" width="897" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584285157855">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="555" y="1297" width="897" height="673" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584285157855" />
+    <state x="768" y="1348" width="374" height="571" key="#com.intellij.ide.util.MemberChooser" timestamp="1584278653706">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="768" y="1348" width="374" height="571" key="#com.intellij.ide.util.MemberChooser/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584278653706" />
+    <state x="736" y="1419" width="525" height="424" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584226666125">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="736" y="1419" width="525" height="424" key="#com.intellij.ide.util.TreeClassChooserDialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584226666125" />
+    <state x="693" y="1385" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584208676484">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="693" y="1385" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584208676484" />
+    <state x="366" y="1314" width="735" height="480" key="FileChooserDialogImpl" timestamp="1584286722206">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="366" y="1314" width="735" height="480" key="FileChooserDialogImpl/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584286722206" />
     <state x="743" y="314" width="424" height="480" key="FileChooserDialogImpl/0.32.1920.1048@0.32.1920.1048" timestamp="1584085835098" />
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1584286917709">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584286917709" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1584286917709">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584286917709" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1584286917709">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584286917709" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1584286917709">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584286917709" />
+    <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1584212620040">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state width="263" height="500" key="HiddenNamespacesPopup/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584212620040" />
+    <state x="449" y="1271" width="1024" height="841" key="SettingsEditor" timestamp="1584286728204">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="449" y="1271" width="1024" height="841" key="SettingsEditor/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584286728204" />
+    <state x="717" y="1393" width="476" height="482" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1584215198576">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="717" y="1393" width="476" height="482" key="com.intellij.database.run.ParametersPanel.Standalone/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584215198576" />
+    <state x="616" y="1463" key="com.intellij.ide.util.TipDialog" timestamp="1584271824548">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="616" y="1463" key="com.intellij.ide.util.TipDialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584271824548" />
+    <state x="632" y="1532" width="646" height="204" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584226022632">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="632" y="1532" width="646" height="204" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584226022632" />
+    <state x="693" y="1403" width="524" height="461" key="extract.method.dialog" timestamp="1584280949804">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="693" y="1403" width="524" height="461" key="extract.method.dialog/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584280949804" />
+    <state x="269" y="1236" width="1372" height="795" key="new project wizard" timestamp="1584226387524">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="269" y="1236" width="1372" height="795" key="new project wizard/0.1080.1920.1080/0.0.1920.1080@0.1080.1920.1080" timestamp="1584226387524" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RGR$Main.ic" NAME="Main Coverage Results" MODIFIED="1584226204288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sample.*</FILTER>
+    </SUITE>
   </component>
 </project>
