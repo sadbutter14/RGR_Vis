@@ -34,8 +34,8 @@ public class Input_Controller {
 
     @FXML
     void initialize() {
+        DB_Handler dbHandler = new DB_Handler();
         confirm.setOnAction(event -> {
-            DB_Handler dbHandler = new DB_Handler();
             String new_name = name_input.getText().trim();
             String new_age = age_input.getText().trim();
             String new_cat = cat_input.getText().trim();

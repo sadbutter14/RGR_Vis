@@ -3,7 +3,6 @@ package sample;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -33,7 +32,7 @@ public class Cat_Controller extends Menu_Controller{
             show_out_win();
         });
         game.setOnAction(actionEvent -> {
-            String g = "игры";
+            String f = "игры";
             game.getScene().getWindow().hide();
             show_out_win();
         });
@@ -48,7 +47,7 @@ public class Cat_Controller extends Menu_Controller{
         }
         Parent root = out.getRoot();
         Stage stage = new Stage();
-        stage.setScene(new Scene(root));
+        stage.setScene(new Scene(root, 400, 500));
         stage.show();
     }
 }

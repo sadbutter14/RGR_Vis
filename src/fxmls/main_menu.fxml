@@ -10,7 +10,7 @@
       <Button fx:id="B_911" layoutX="267.0" layoutY="123.0" mnemonicParsing="false" onAction="#initialize" prefHeight="44.0" prefWidth="83.0" text="9-11" />
       <Button fx:id="B_1214" layoutX="52.0" layoutY="299.0" mnemonicParsing="false" onAction="#initialize" prefHeight="44.0" prefWidth="83.0" text="12-14" />
       <Button fx:id="B_1517" layoutX="267.0" layoutY="299.0" mnemonicParsing="false" onAction="#initialize" prefHeight="44.0" prefWidth="83.0" text="15-17" />
-      <Button fx:id="add" layoutX="150.0" layoutY="400.0" mnemonicParsing="false" onAction="#initialize" prefHeight="44.0" prefWidth="83.0" text="Добавить запись" />
+      <Button fx:id="add" layoutX="108.0" layoutY="403.0" mnemonicParsing="false" onAction="#initialize" prefHeight="44.0" prefWidth="185.0" text="Добавить запись" />
       <Label layoutX="40.0" layoutY="470.0" text="Это тестовая версия GUI для проверки логики" />
    </children>
 </AnchorPane>
