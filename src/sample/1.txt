@@ -12,9 +12,7 @@ import javafx.stage.Stage;
 
 
 public class Menu_Controller {
-    @FXML
     private String a;
-    @FXML
     private String f;
 
     public void Set_f(String y) {
@@ -40,73 +38,79 @@ public class Menu_Controller {
     private TextArea out_des;
 
     @FXML
-    private RadioButton R68;
+    private MenuButton M_68;
 
     @FXML
-    RadioButton R911;
+    private MenuItem feature;
 
     @FXML
-    private RadioButton R1214;
+    private MenuItem game;
 
     @FXML
-    private RadioButton R1517;
+    private MenuButton M_911;
+
+    @FXML
+    private MenuButton M_1214;
+
+    @FXML
+    private MenuButton M_1517;
 
     @FXML
     private Button add;
 
-    @FXML
-    private Button conf;
 
     @FXML
-    private CheckBox feature;
-
-    @FXML
-    private CheckBox game;
-
-    @FXML
-    void RB() {
-        if (R68.isSelected()) {
-            this.a = R68.getText();
-            if (feature.isSelected())
-                this.f = feature.getText().toLowerCase();
-            else if (game.isSelected())
-                this.f = game.getText().toLowerCase();
-        }
-        if (R911.isSelected()) {
-            this.a = R911.getText();
-            if (feature.isSelected())
-                this.f = feature.getText().toLowerCase();
-            else if (game.isSelected())
-                this.f = game.getText().toLowerCase();
-        }
-        if (R1214.isSelected()) {
-            this.a = R1214.getText();
-            if (feature.isSelected())
-                this.f = feature.getText().toLowerCase();
-            else if (game.isSelected())
-                this.f = game.getText().toLowerCase();
-        }
-        if (R1517.isSelected()) {
-            this.a = R1517.getText();
-            if (feature.isSelected())
-                this.f = feature.getText().toLowerCase();
-            else if (game.isSelected())
-                this.f = game.getText().toLowerCase();
-        }
-    }
-
-    @FXML
-    void confAct(){
-        conf.getScene().getWindow().hide();
+    void onClickMethod1() {
+        this.a = M_68.getText();
+        this.f = game.getText();
+        M_68.getScene().getWindow().hide();
         show_out_win(Get_a(), Get_f());
     }
 
     @FXML
-    void onClickMethod() {
+    void onClickMethod2() {
+        this.a = M_911.getText();
+        this.f = game.getText();
+        M_911.getScene().getWindow().hide();
+        show_out_win(Get_a(), Get_f());
+    }
+
+    @FXML
+    void onClickMethod3() {
+        this.a = M_1214.getText();
+        this.f = game.getText();
+        M_1214.getScene().getWindow().hide();
+        show_out_win(Get_a(), Get_f());
+    }
+
+    @FXML
+    void onClickMethod4() {
+        this.a = M_1517.getText();
+        this.f = game.getText();
+        M_1517.getScene().getWindow().hide();
+        show_out_win(Get_a(), Get_f());
+    }
+
+    @FXML
+    void onClickMethod5() {
         add.getScene().getWindow().hide();
         show_add();
     }
 
+     @FXML
+        void onClick1(){
+            String y = feature.getText();
+            Set_f(y);
+            feature.getScene().getWindow().hide();
+            show_out_win(Get_a(), Get_f());
+        }
+        @FXML
+        void onClick2(){
+            String y = game.getText();
+            Set_f(y);
+            game.getScene().getWindow().hide();
+            show_out_win(Get_a(), Get_f());
+        }
 
     private void show_add() {
         FXMLLoader category = new FXMLLoader();
