@@ -14,111 +14,239 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import javax.swing.*;
 
 
 public class Menu_Controller {
-    private String a;
-    private String f;
-
-    public void Set_f(String y) {
-        this.f = y;
-    }
-
-    public String Get_f() {
-        return this.f;
-    }
-
-    public void Set_a(String x) {
-        this.a = x;
-    }
-
-    public String Get_a() {
-        return this.a;
-    }
-
-    @FXML
-    private TextField out_age;
-
-    @FXML
-    private TextArea out_des;
-
-    @FXML
-    private RadioButton R68;
-
-    @FXML
-    RadioButton R911;
-
-    @FXML
-    private RadioButton R1214;
-
-    @FXML
-    private RadioButton R1517;
 
     @FXML
     private Button add;
 
     @FXML
-    private Button conf;
+    private Button f68;
 
     @FXML
-    private CheckBox feature;
+    private Button g68;
 
     @FXML
-    private CheckBox game;
+    private Button f911;
 
     @FXML
-    void RB() {
-        if (R68.isSelected()) {
-            R68.getScene().getWindow().hide();
-            DB_Handler db = new DB_Handler();
-            String select = "SELECT description FROM Data WHERE age=68 AND category=1";
-            try {
-                Connection connection = db.getdbConnection();
-                Statement PS = connection.createStatement();
-                ResultSet rs = PS.executeQuery(select);
-                while (rs.next()) {
-                    Data data = new Data();
-                    data.setDescription(rs.getString("description"));
-                    System.out.println(data);
-                    final JFrame names = new JFrame("ВЫВОД");
-                    names.add(new java.awt.TextArea("Возраст:\n\n6-8" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
-                    names.setSize(1000, 900);
-                    names.setLayout(new FlowLayout(FlowLayout.CENTER));
-                    names.setVisible(true);
-                    names.setResizable(true);
-                }
-            } catch (SQLException | ClassNotFoundException e) {
-                e.printStackTrace();
+    private Button g911;
+
+    @FXML
+    private Button f1214;
+
+    @FXML
+    private Button g1214;
+
+    @FXML
+    private Button f1517;
+
+    @FXML
+    private Button g1517;
+
+    @FXML
+    void f_68() {
+        f68.getScene().getWindow().hide();
+        DB_Handler db = new DB_Handler();
+        String select = "SELECT description FROM Data WHERE age=68 AND category=1";
+        try {
+            Connection connection = db.getdbConnection();
+            Statement PS = connection.createStatement();
+            ResultSet rs = PS.executeQuery(select);
+            while (rs.next()) {
+                Data data = new Data();
+                data.setDescription(rs.getString("description"));
+                System.out.println(data);
+                final JFrame names = new JFrame("ВЫВОД");
+                names.add(new java.awt.TextArea("Возраст:\n\n6-8" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                names.setSize(1000, 900);
+                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                names.setVisible(true);
+                names.setResizable(true);
             }
-        }
-        if (R911.isSelected()) {
-            this.a = R911.getText();
-            if (feature.isSelected())
-                this.f = feature.getText().toLowerCase();
-            else if (game.isSelected())
-                this.f = game.getText().toLowerCase();
-        }
-        if (R1214.isSelected()) {
-            this.a = R1214.getText();
-            if (feature.isSelected())
-                this.f = feature.getText().toLowerCase();
-            else if (game.isSelected())
-                this.f = game.getText().toLowerCase();
-        }
-        if (R1517.isSelected()) {
-            this.a = R1517.getText();
-            if (feature.isSelected())
-                this.f = feature.getText().toLowerCase();
-            else if (game.isSelected())
-                this.f = game.getText().toLowerCase();
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
 
+    @FXML
+    void g_68() {
+        g68.getScene().getWindow().hide();
+        DB_Handler db = new DB_Handler();
+        String select = "SELECT description FROM Data WHERE age=68 AND category=2";
+        try {
+            Connection connection = db.getdbConnection();
+            Statement PS = connection.createStatement();
+            ResultSet rs = PS.executeQuery(select);
+            while (rs.next()) {
+                Data data = new Data();
+                data.setDescription(rs.getString("description"));
+                System.out.println(data);
+                final JFrame names = new JFrame("ВЫВОД");
+                names.add(new java.awt.TextArea("Возраст:\n\n6-8" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                names.setSize(1000, 900);
+                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                names.setVisible(true);
+                names.setResizable(true);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void f_911() {
+        f911.getScene().getWindow().hide();
+        DB_Handler db = new DB_Handler();
+        String select = "SELECT description FROM Data WHERE age=911 AND category=1";
+        try {
+            Connection connection = db.getdbConnection();
+            Statement PS = connection.createStatement();
+            ResultSet rs = PS.executeQuery(select);
+            while (rs.next()) {
+                Data data = new Data();
+                data.setDescription(rs.getString("description"));
+                System.out.println(data);
+                final JFrame names = new JFrame("ВЫВОД");
+                names.add(new java.awt.TextArea("Возраст:\n\n6-8" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                names.setSize(1000, 900);
+                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                names.setVisible(true);
+                names.setResizable(true);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void g_911() {
+        g911.getScene().getWindow().hide();
+        DB_Handler db = new DB_Handler();
+        String select = "SELECT description FROM Data WHERE age=911 AND category=2";
+        try {
+            Connection connection = db.getdbConnection();
+            Statement PS = connection.createStatement();
+            ResultSet rs = PS.executeQuery(select);
+            while (rs.next()) {
+                Data data = new Data();
+                data.setDescription(rs.getString("description"));
+                System.out.println(data);
+                final JFrame names = new JFrame("ВЫВОД");
+                names.add(new java.awt.TextArea("Возраст:\n\n9-11" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                names.setSize(1000, 900);
+                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                names.setVisible(true);
+                names.setResizable(true);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void f_1214() {
+        f1214.getScene().getWindow().hide();
+        DB_Handler db = new DB_Handler();
+        String select = "SELECT description FROM Data WHERE age=1214 AND category=1";
+        try {
+            Connection connection = db.getdbConnection();
+            Statement PS = connection.createStatement();
+            ResultSet rs = PS.executeQuery(select);
+            while (rs.next()) {
+                Data data = new Data();
+                data.setDescription(rs.getString("description"));
+                System.out.println(data);
+                final JFrame names = new JFrame("ВЫВОД");
+                names.add(new java.awt.TextArea("Возраст:\n\n12-14" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                names.setSize(1000, 900);
+                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                names.setVisible(true);
+                names.setResizable(true);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void g_1214() {
+        g1214.getScene().getWindow().hide();
+        DB_Handler db = new DB_Handler();
+        String select = "SELECT description FROM Data WHERE age=12-14 AND category=2";
+        try {
+            Connection connection = db.getdbConnection();
+            Statement PS = connection.createStatement();
+            ResultSet rs = PS.executeQuery(select);
+            while (rs.next()) {
+                Data data = new Data();
+                data.setDescription(rs.getString("description"));
+                System.out.println(data);
+                final JFrame names = new JFrame("ВЫВОД");
+                names.add(new java.awt.TextArea("Возраст:\n\n12-14" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                names.setSize(1000, 900);
+                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                names.setVisible(true);
+                names.setResizable(true);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void f_1517() {
+        f1517.getScene().getWindow().hide();
+        DB_Handler db = new DB_Handler();
+        String select = "SELECT description FROM Data WHERE age=1517 AND category=1";
+        try {
+            Connection connection = db.getdbConnection();
+            Statement PS = connection.createStatement();
+            ResultSet rs = PS.executeQuery(select);
+            while (rs.next()) {
+                Data data = new Data();
+                data.setDescription(rs.getString("description"));
+                System.out.println(data);
+                final JFrame names = new JFrame("ВЫВОД");
+                names.add(new java.awt.TextArea("Возраст:\n\n15-17" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                names.setSize(1000, 900);
+                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                names.setVisible(true);
+                names.setResizable(true);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void g_1517() {
+        g1517.getScene().getWindow().hide();
+        DB_Handler db = new DB_Handler();
+        String select = "SELECT description FROM Data WHERE age=1517 AND category=2";
+        try {
+            Connection connection = db.getdbConnection();
+            Statement PS = connection.createStatement();
+            ResultSet rs = PS.executeQuery(select);
+            while (rs.next()) {
+                Data data = new Data();
+                data.setDescription(rs.getString("description"));
+                System.out.println(data);
+                final JFrame names = new JFrame("ВЫВОД");
+                names.add(new java.awt.TextArea("Возраст:\n\n15-17" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                names.setSize(1000, 900);
+                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                names.setVisible(true);
+                names.setResizable(true);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 //    @FXML
 //    void confAct() {
 //        conf.getScene().getWindow().hide();

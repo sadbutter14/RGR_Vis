@@ -3,22 +3,26 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Menu_Controller">
-    <Button fx:id="add" layoutX="108.0" layoutY="403.0" mnemonicParsing="false" onAction="#onClickMethod" prefHeight="44.0" prefWidth="185.0" text="Добавить запись" />
-    <Label layoutX="40.0" layoutY="470.0" text="Это тестовая версия GUI для проверки логики" />
-   <RadioButton fx:id="R68" layoutX="26.0" layoutY="48.0" mnemonicParsing="false" onAction="#RB" text="6-8" toggleGroup="$T">
-      <toggleGroup>
-         <ToggleGroup fx:id="T" />
-      </toggleGroup>
-   </RadioButton>
-   <RadioButton fx:id="R911" layoutX="26.0" layoutY="81.0" mnemonicParsing="false" onAction="#RB" text="9-11" toggleGroup="$T" />
-   <RadioButton fx:id="R1214" layoutX="26.0" layoutY="115.0" mnemonicParsing="false" onAction="#RB" text="12-14" toggleGroup="$T" />
-   <RadioButton fx:id="R1517" layoutX="26.0" layoutY="151.0" mnemonicParsing="false" onAction="#RB" text="15-17" toggleGroup="$T">
-      <toggleGroup>
-         <ToggleGroup fx:id="T1" />
-      </toggleGroup>
-   </RadioButton>
-   <CheckBox fx:id="feature" layoutX="149.0" layoutY="261.0" mnemonicParsing="false" onAction="#RB" text="Особенности" />
-   <CheckBox fx:id="game" layoutX="149.0" layoutY="290.0" mnemonicParsing="false" onAction="#RB" text="Игры" />
-   <Button fx:id="conf" layoutX="169.0" layoutY="347.0" mnemonicParsing="false" text="Найти" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+            prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Menu_Controller">
+    <Button fx:id="add" layoutX="108.0" layoutY="403.0" mnemonicParsing="false" onAction="#onClickMethod"
+            prefHeight="44.0" prefWidth="185.0" text="Добавить запись"/>
+    <Label layoutX="40.0" layoutY="470.0" text="Это тестовая версия GUI для проверки логики"/>
+    <Button fx:id="f1517" layoutX="28.0" layoutY="281.0" mnemonicParsing="false" onAction="#f_1517"
+            text="Особенности 15-17 лет"/>
+    <Button fx:id="g1517" layoutX="266.0" layoutY="281.0" mnemonicParsing="false" onAction="#g_1517"
+            text="Игры 15-17 лет"/>
+    <Button fx:id="f1214" layoutX="28.0" layoutY="213.0" mnemonicParsing="false" onAction="#f_1214"
+            text="Особенности 12-14 лет"/>
+    <Button fx:id="g1214" layoutX="266.0" layoutY="213.0" mnemonicParsing="false" onAction="#g_1214"
+            text="Игры 12-14 лет"/>
+    <Button fx:id="f68" layoutX="28.0" layoutY="70.0" mnemonicParsing="false" onAction="#f_68" prefHeight="26.0"
+            prefWidth="178.0" text="Особенности 6-8 лет"/>
+    <Button fx:id="g68" layoutX="266.0" layoutY="70.0" mnemonicParsing="false" onAction="#g_68" prefHeight="26.0"
+            prefWidth="123.0" text="Игры 6-8 лет"/>
+    <Button fx:id="f911" layoutX="28.0" layoutY="141.0" mnemonicParsing="false" onAction="#f_911" prefHeight="26.0" prefWidth="178.0"
+            text="Особенности 9-11 лет"/>
+    <Button fx:id="g911" layoutX="266.0" layoutY="141.0" mnemonicParsing="false" onAction="#g_911" prefHeight="26.0"
+            prefWidth="123.0" text="Игры 9-11 лет"/>
 </AnchorPane>
