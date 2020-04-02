@@ -1,7 +1,5 @@
 package DB_Classes;
 
-import sample.Data;
-
 import java.sql.*;
 
 public class DB_Handler extends Configs {
@@ -23,14 +21,35 @@ public class DB_Handler extends Configs {
         PS.setString(3, name);
         PS.setString(4, description);
         PS.executeUpdate();
+        PS.close();
     }
 
-    public ResultSet getData(String age) throws SQLException, ClassNotFoundException {
-        ResultSet RS = null;
-        String select = "SELECT " + Consts.DATA_DES + "FROM " + Consts.DATA_TABLE + " WHERE " + Consts.DATA_AGE + "=?";
-        PreparedStatement PS = getdbConnection().prepareStatement(select);
-        PS.setString(1 , age);
-        RS = PS.executeQuery();
-        return RS;
+    //    public ResultSet getData(String age, String cat) throws SQLException, ClassNotFoundException {
+//        ResultSet RS;
+//        String select = "SELECT " + Consts.DATA_DES + " FROM " + Consts.DATA_TABLE + " WHERE " + Consts.DATA_AGE + "=?" + " AND " + Consts.DATA_CAT + "=?";
+//        PreparedStatement PS = getdbConnection().prepareStatement(select);
+//        PS.setString(1 , age);
+//        PS.setString(2 , cat);
+//        RS = PS.executeQuery();
+//        System.out.println(RS);
+//        PS.close();
+//
+//        return RS;
+//    }
+    public void getData(String age, String cat) throws SQLException, ClassNotFoundException {
+        DB_Handler ds = new DB_Handler();
+        Statement stat = dbConnection.createStatement();
+        String select = "SELECT * FROM Data WHERE category='особенности'";
+//        PreparedStatement PS = getdbConnection().prepareStatement(select);
+//        PS.setString(1, age);
+//        PS.setString(2, cat);
+        ResultSet RS = stat.executeQuery(select);
+        System.out.println("TEST");
+        while (RS.next()) {
+            String id = RS.getString(5);
+            System.out.println(id);
+        }
+        RS.close();
     }
 }
+

@@ -1,4 +1,4 @@
-package sample;
+package DB_Classes;
 
 public class Data {
     private String age;
@@ -12,6 +12,8 @@ public class Data {
         this.name = name;
         this.description = description;
     }
+
+    public Data() {}
 
     public String getAge() {
         return age;
@@ -43,6 +45,11 @@ public class Data {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return description;
     }
 }
 

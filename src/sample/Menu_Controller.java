@@ -1,20 +1,28 @@
 package sample;
 
+import DB_Classes.DB_Handler;
+import DB_Classes.Data;
 import javafx.fxml.FXML;
 
+import java.awt.*;
+import java.awt.Label;
 import java.io.IOException;
+import java.sql.*;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+import javax.swing.*;
 
 
 public class Menu_Controller {
-    @FXML
     private String a;
-    @FXML
     private String f;
 
     public void Set_f(String y) {
@@ -66,11 +74,27 @@ public class Menu_Controller {
     @FXML
     void RB() {
         if (R68.isSelected()) {
-            this.a = R68.getText();
-            if (feature.isSelected())
-                this.f = feature.getText().toLowerCase();
-            else if (game.isSelected())
-                this.f = game.getText().toLowerCase();
+            R68.getScene().getWindow().hide();
+            DB_Handler db = new DB_Handler();
+            String select = "SELECT description FROM Data WHERE age=68 AND category=1";
+            try {
+                Connection connection = db.getdbConnection();
+                Statement PS = connection.createStatement();
+                ResultSet rs = PS.executeQuery(select);
+                while (rs.next()) {
+                    Data data = new Data();
+                    data.setDescription(rs.getString("description"));
+                    System.out.println(data);
+                    final JFrame names = new JFrame("ВЫВОД");
+                    names.add(new java.awt.TextArea("Возраст:\n\n6-8" + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+                    names.setSize(1000, 900);
+                    names.setLayout(new FlowLayout(FlowLayout.CENTER));
+                    names.setVisible(true);
+                    names.setResizable(true);
+                }
+            } catch (SQLException | ClassNotFoundException e) {
+                e.printStackTrace();
+            }
         }
         if (R911.isSelected()) {
             this.a = R911.getText();
@@ -95,18 +119,39 @@ public class Menu_Controller {
         }
     }
 
-    @FXML
-    void confAct(){
-        conf.getScene().getWindow().hide();
-        show_out_win(Get_a(), Get_f());
-    }
+//    @FXML
+//    void confAct() {
+//        conf.getScene().getWindow().hide();
+//        final char dm = (char) 39;
+//        DB_Handler db = new DB_Handler();
+//        String select = "SELECT description FROM Data WHERE age=?";
+//        try {
+//            Connection connection = db.getdbConnection();
+//            PreparedStatement PS = connection.prepareStatement(select);
+//            PS.setString(1, dm + R68.getText() + dm);
+//            ResultSet rs = PS.executeQuery(select);
+//            while (rs.next()) {
+//                Data data = new Data();
+//                data.setDescription(rs.getString("description"));
+//                System.out.println(data);
+//                final JFrame names = new JFrame("ВЫВОД");
+//                names.add(new java.awt.TextArea("Возраст:\n\n" + Get_a() + "\n\nОписание:\n\n" + data.getDescription(), 50, 100));
+//                names.setSize(1000, 500);
+//                names.setLayout(new FlowLayout(FlowLayout.CENTER));
+//                names.setVisible(true);
+//                names.setResizable(true);
+//                break;
+//            }
+//        } catch (SQLException | ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @FXML
     void onClickMethod() {
         add.getScene().getWindow().hide();
         show_add();
     }
-
 
     private void show_add() {
         FXMLLoader category = new FXMLLoader();
@@ -121,24 +166,5 @@ public class Menu_Controller {
         stage.setResizable(false);
         stage.setScene(new Scene(root, 400, 500));
         stage.show();
-    }
-
-    public void show_out_win(String age, String cat) {
-        FXMLLoader out = new FXMLLoader();
-        out.setLocation(getClass().getResource("../fxmls/output.fxml"));
-        try {
-            out.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Parent root = out.getRoot();
-        Stage stage = new Stage();
-        stage.setResizable(false);
-        stage.setScene(new Scene(root, 400, 500));
-        stage.show();
-        System.out.println(Get_a());
-        System.out.println(Get_f());
-
-        //TODO тут вызываем скулю на вывод
     }
 }

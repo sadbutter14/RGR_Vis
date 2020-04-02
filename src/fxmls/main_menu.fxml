@@ -20,5 +20,5 @@
    </RadioButton>
    <CheckBox fx:id="feature" layoutX="149.0" layoutY="261.0" mnemonicParsing="false" onAction="#RB" text="Особенности" />
    <CheckBox fx:id="game" layoutX="149.0" layoutY="290.0" mnemonicParsing="false" onAction="#RB" text="Игры" />
-   <Button fx:id="conf" layoutX="169.0" layoutY="347.0" mnemonicParsing="false" onAction="#confAct" text="Найти" />
+   <Button fx:id="conf" layoutX="169.0" layoutY="347.0" mnemonicParsing="false" text="Найти" />
 </AnchorPane>
